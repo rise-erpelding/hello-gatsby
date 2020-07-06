@@ -25,6 +25,17 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <svg
+        style={{
+          width: `100vw`,
+          // height: `100px`,
+        }}
+        className="svg-header"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 50"
+        preserveAspectRatio="none">
+        <polygon fill="#D1E1EA" points="0,50 100,50 100,0" />
+      </svg>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
@@ -34,12 +45,29 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
+
         <footer>
           © {new Date().getFullYear()} Rise Erpelding, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
+
       </div>
+      <svg
+          style={{
+            margin: `0 auto`,
+            padding: `0`,
+          }}
+          className="svg-main"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <polygon
+            fill="#075D8F"
+            points="0,0 0,100 100,100"
+          />
+        </svg>
     </>
   )
 }

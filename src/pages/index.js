@@ -27,30 +27,32 @@ const IndexPage = () => {
   }
 
   return (
-        <Layout
-          onTest={testFunction}
-          >
-          <SEO title="Home" />
-          {/* Nav bar starts here */}
-          <ul className="index__faux-navbar">
-            <li><button onClick={aboutScroll} onKeyPress={aboutScroll}>About</button></li>
-            <li><button onClick={projectsScroll} onKeyPress={projectsScroll}>Projects</button></li>
-            <li><button><Link to="/resume/">Resume</Link></button></li>
-            <li><button onClick={contactScroll} onKeyPress={contactScroll}>Contact</button></li>
-          </ul>
-          {/* Nav bar ends here */}
-          <Hero />
-          <span ref={aboutRef}>
-            <About />
-          </span>
-          <span ref={projectsRef}>
-            <Projects />
-          </span>
-          <span ref={contactRef}>
-            <Contact />
-          </span>
-          <Link to="/resume/">Go to Resume</Link> <br />
-        </Layout>
+    <Layout
+      onTest={testFunction}
+    >
+      <SEO title="Home" />
+
+      {/* Nav bar starts here */}
+      <ul className="index__faux-navbar">
+        <li><button onClick={aboutScroll} onKeyPress={aboutScroll}>About</button></li>
+        <li><button onClick={projectsScroll} onKeyPress={projectsScroll}>Projects</button></li>
+        <li><button><Link to="/resume/">Resume</Link></button></li>
+        <li><button onClick={contactScroll} onKeyPress={contactScroll}>Contact</button></li>
+      </ul>
+      {/* Nav bar ends here */}
+      <Hero />
+      <span ref={aboutRef}>
+        <About />
+      </span>
+      <span ref={projectsRef}>
+        <Projects />
+      </span>
+      <span ref={contactRef}>
+        <Contact />
+      </span>
+      <Link to="/resume/">Go to Resume</Link> <br />
+
+    </Layout>
   )
 }
 
