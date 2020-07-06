@@ -1,4 +1,4 @@
-import React, { useRef, useContext, Profiler } from "react";
+import React, { useRef } from "react";
 import { Link } from "gatsby";
 
 import Layout from "../components/layout"
@@ -33,13 +33,7 @@ const IndexPage = () => {
           >
           <SEO title="Home" />
           {/* Nav bar starts here */}
-          <ul style={{
-            // listStyle: `none`,
-            // display: `flex`,
-            // margin: `0`,
-            // padding: `0`,
-            // justifyContent: `flex-end`,
-          }}>
+          <ul className="index__faux-navbar">
             <li><button onClick={aboutScroll} onKeyDown={aboutScroll}>About</button></li>
             <li><button onClick={projectsScroll} onKeyDown={projectsScroll}>Projects</button></li>
             <li><Link to="/resume/">Resume</Link></li>

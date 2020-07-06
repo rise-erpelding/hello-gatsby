@@ -1,0 +1,22 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.index__faux-navbar {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+.index__faux-navbar > li > button {
+  border: none;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.index__faux-navbar > li > a {
+  padding: 5px 20px;
+  text-decoration: none;
+}
