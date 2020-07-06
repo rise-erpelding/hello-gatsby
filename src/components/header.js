@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import NavBar from './navbar';
+// import NavBar from './navbar';
 
 const Header = ({ siteTitle }) => (
   <header
@@ -28,7 +28,7 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-      <NavBar />
+      {/* <NavBar /> */}
     </div>
   </header>
 )
