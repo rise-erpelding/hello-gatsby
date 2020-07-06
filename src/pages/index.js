@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import { Link } from "gatsby";
 
 import Layout from "../components/layout"
-// import Image from "../components/image"
 import SEO from "../components/seo"
 
 import Hero from '../components/hero';
@@ -34,10 +33,10 @@ const IndexPage = () => {
           <SEO title="Home" />
           {/* Nav bar starts here */}
           <ul className="index__faux-navbar">
-            <li><button onClick={aboutScroll} onKeyDown={aboutScroll}>About</button></li>
-            <li><button onClick={projectsScroll} onKeyDown={projectsScroll}>Projects</button></li>
-            <li><Link to="/resume/">Resume</Link></li>
-            <li><button onClick={contactScroll} onKeyDown={contactScroll}>Contact</button></li>
+            <li><button onClick={aboutScroll} onKeyPress={aboutScroll}>About</button></li>
+            <li><button onClick={projectsScroll} onKeyPress={projectsScroll}>Projects</button></li>
+            <li><button><Link to="/resume/">Resume</Link></button></li>
+            <li><button onClick={contactScroll} onKeyPress={contactScroll}>Contact</button></li>
           </ul>
           {/* Nav bar ends here */}
           <Hero />
